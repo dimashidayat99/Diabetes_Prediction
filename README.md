@@ -26,7 +26,6 @@ The Behavioral Risk Factor Surveillance System (BRFSS) is a health-related telep
 
 ![](https://github.com/dimashidayat99/Diabetes_Prediction/blob/main/result/Independent%20Variables%20vs%20Dependent%20Variable.png)
 
-
 Based on the analysis of binary variables and target variable, some information is obtained:
 1. Most diabetic tend to have high blood pressure.
 2. Most diabetic tend to have high cholesterol.
@@ -51,15 +50,21 @@ consumption sample is limited. It is not enough information to support the concl
 ### Combined Effects
 #### Smoking, Alcohol Consumption and Diabetes
 
+![](https://github.com/dimashidayat99/Diabetes_Prediction/blob/main/result/Smoker%2C%20Alcohol%2C%20Diabetes.png)
+
 Based on the data, smoking together with heavy alcohol consumption increase risk of 
 developing diabetes.
 
 #### High Blood Pressure, High Collesterol and Diabetes
 
+![](https://github.com/dimashidayat99/Diabetes_Prediction/blob/main/result/Bp%2C%20Chol%2C%20Diabetes.png)
+
 Based on the data, combine effect of high blood pressure and high cholesterol increase risk 
 of developing diabetes.
 
 ### Correlation Analysis
+
+![](https://github.com/dimashidayat99/Diabetes_Prediction/blob/main/result/Correlation%20Analysis%20on%20Diabetes.png)
 
 Based on the correlation analysis, AnyHealthCare, NoDocbcCost, Fruits and Sex are the least correlated with the target variable (Diabetes binary). All other variables have a significant correlation with the target variable (Diabetes binary).
 
@@ -77,21 +82,22 @@ performance metrics. All the models were evaluated by using several metrics to m
 
 The best methodology and model will be used to undergo the optimization process known as hyperparameter tuning to find the best parameter of the models. The best methodology and the model was used to develop the data driven diabetes prediction system. 
 
+![](https://github.com/dimashidayat99/Diabetes_Prediction/blob/main/result/Top%203%20Best%20Models%20%26%20Methods.png)
 
-The evaluation results were filtered to finalized the best prediction model by increasing 
-the benchmark of F1 Positive>0.9 and F1 Negative>0.91. Both Random Forest and Lightgbm model can be used in this project since the difference between the evaluation metrics is not significant. However,it is found that the Lightgbm model with Random Forest features selection exhibit the fastest execution time, which only about 7 seconds, as compared to others (Random Forest model with no features selection (~9 second) and Lightgbm with no features selection (~53 second)). Thus, this model was selected at the best prediction model in this project.
+The evaluation results were filtered to finalized the best prediction model by increasing the benchmark of F1 Positive>0.9 and F1 Negative>0.91 as shown in the top 3 models figure. The best feature scaling method is to not doing feature scaling, while the best data balancing technique was SMOTE upsampling. Both Random Forest and Lightgbm model can be used in this project since the difference between the evaluation metrics is not significant. However,it is found that the Lightgbm model with Random Forest features selection exhibit the fastest execution time, which only about 7 seconds, as compared to others (Random Forest model with no features selection (~9 second) and Lightgbm with no features selection (~53 second)). Thus, Lightgbm with random forest feature selection model (with no feature scaling and SMOTE upsampling) was selected at the best prediction model in this project.
 
-The best model will be optimized to give maximum potential of the model by finding the best parameter to used in the model. After Hyperparameter tuning of the model, model able to achieve accuracy of 0.9098, precision positive of 0.9687, precision negative of 0.8641, recal sensitivity of 0.8466, recall specitivity of 0.9727, F1 positive of	0.9035 and F1 negative	 of 0.9152. 
+![](https://github.com/dimashidayat99/Diabetes_Prediction/blob/main/result/Performance%20Metrics%20Best%20Model.png)
 
+The best model will be optimized to give maximum potential of the model by finding the best parameter to used in the model. After Hyperparameter tuning of the model, model able to achieve accuracy of 0.9098, precision positive of 0.9687, precision negative of 0.8641, recal sensitivity of 0.8466, recall specitivity of 0.9727, F1 positive of	0.9035 and F1 negative of 0.9152. 
 
+![](https://github.com/dimashidayat99/Diabetes_Prediction/blob/main/result/Feature%20Importances.png)
 
 Based on the features importance of the best model, the most important features is BMI, followed by Age and General Health.
 
 
 # Deployment
 Anvil web application platform has been used to deploy the prediction model as a healthcare 
-application to evaluate the tendency of the user to get diabetes or not. Anvil is a free Pythonbased drag-and-drop web app builder. User can navigate the apps using either desktop, 
-laptop, tablet, or smartphone, which is very convenient to access. The Diabetes Prediction 
+application to evaluate the tendency of the user to get diabetes or not. Anvil is a free Pythonbased drag-and-drop web app builder. User can navigate the apps using either desktop, laptop, tablet, or smartphone, which is very convenient to access. The Diabetes Prediction 
 App can be access through the [webpage link.](https://yiib2fcsyexhjsql.anvil.app/RJP4XN4VUDDQFDCAEM4WLZ7G)
 
 

@@ -24,6 +24,7 @@ The Behavioral Risk Factor Surveillance System (BRFSS) is a health-related telep
 
 ### Relation Between Binary Variables with the Target Variable (Diabetes Binary)
 
+![](https://github.com/dimashidayat99/Diabetes_Prediction/blob/main/result/Independent%20Variables%20vs%20Dependent%20Variable.png)
 
 
 Based on the analysis of binary variables and target variable, some information is obtained:

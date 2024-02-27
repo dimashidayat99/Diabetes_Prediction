@@ -100,5 +100,7 @@ Anvil web application platform has been used to deploy the prediction model as a
 application to evaluate the tendency of the user to get diabetes or not. Anvil is a free Pythonbased drag-and-drop web app builder. User can navigate the apps using either desktop, laptop, tablet, or smartphone, which is very convenient to access. The Diabetes Prediction 
 App can be access through the [webpage link.](https://yiib2fcsyexhjsql.anvil.app/RJP4XN4VUDDQFDCAEM4WLZ7G)
 
+# Further Reading
+For further reading and understanding this project, please move to the [code folder](https://github.com/dimashidayat99/Diabetes_Prediction/tree/main/code) where the source code can be found. There are more explanations, results and findings in the source code.
 
 
